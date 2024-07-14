@@ -45,7 +45,7 @@ if __name__ == '__main__':
     parser.add_argument('--beta', type=str, default='0.3', help='the trend factor')
     parser.add_argument('--last_li', type=int, default=16, help='Minimum number of granules')
     parser.add_argument('--target', type=str, default='OT', help='Predict target characteristics')
-    parser.add_argument('--train_epochs', type=int, default=1, help='Training frequency')
+    parser.add_argument('--train_epochs', type=int, default=10, help='Training frequency')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size of training input data')
     parser.add_argument('--seq_len', type=int, default=96, help='Input length')
     parser.add_argument('--pred_len', type=int, default=96, help='Predict length')
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_layers', type=int, default=8, help='num_layers')
     parser.add_argument('--inverse', action='store_true', help='inverse', default=False)
     args = parser.parse_args()
-    #判断GPU是否可用
+
     args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
 
     print('Args in experiment:')
