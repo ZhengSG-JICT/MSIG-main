@@ -58,7 +58,7 @@ The length of the historical input sequence is maintained at $96$, whereas the l
 ![Alt text](img/ETTh1_and_ETTm2.png)
 
 ### 2. ECL, EXCHG and TRFC prediction results
-![Alt text](img/ECL_and_EXCHG_TRFC.png)
+![Alt text](img/ECL_and_EXCHG_and_TRFC.png)
 
 
 ## Train and Evaluates
