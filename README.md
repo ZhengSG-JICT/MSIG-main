@@ -54,7 +54,11 @@ MSIG\data\ETT
 The length of the historical input sequence is maintained at $96$, whereas the length of the sequence to be predicted is selected from a range of values, i.e., $\{96, 192, 336, 720\}$. Note that the input length is fixed to be 96 for all methods for a fair comparison. For ETTh2, ETTm2, ECL, TRFC, EXCHG, Covid_19 data sets, the evaluation is based on mean square error (MSE) and mean absolute error (MAE) measures. Other data sets are measured by RMSE, SMAPE, and MASEL.
 
 ## Main Results
+### 1. ETTh1 and ETTm2 prediction results
+![Alt text](imgs/ETTh1_and_ETTm2.png)
 
+### 2. ECL, EXCHG and TRFC prediction results
+![Alt text](imgs/ECL_and_EXCHG_TRFC.png)
 
 
 ## Train and Evaluates
