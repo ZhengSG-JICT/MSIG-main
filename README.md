@@ -6,7 +6,7 @@ The model is implemented using Python 3.9 with dependencies specified in require
 
 # Data Preparation
 
-## Multivariate time series datasets
+## time series datasets
 
 Download Traffic, Electricity, Exchange-rate datasets from https://github.com/laiguokun/multivariate-time-series-data. Uncompress them and move them to the data folder.
 
