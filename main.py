@@ -38,8 +38,8 @@ def seed_random(seed=1000):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='MSIG')
-    parser.add_argument('--root_path', type=str, default='./data/ETT/', help='根路径')
-    parser.add_argument('--data_path', type=str, default='ETTh1.csv', help='数据文件名')
+    parser.add_argument('--root_path', type=str, default='./data/ETT/')
+    parser.add_argument('--data_path', type=str, default='ETTh1.csv')
     parser.add_argument('--data', type=str, default='ETTh1', help='data')
     parser.add_argument('--alpha', type=str, default='0.3', help='the granularity level of granule')
     parser.add_argument('--beta', type=str, default='0.3', help='the trend factor')
