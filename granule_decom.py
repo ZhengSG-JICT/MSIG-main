@@ -111,14 +111,11 @@ class Granlue_Decom(nn.Module):
                 Q_n.append(t_1)
                 Q_new = [0]
                 T_new = [0]
-                print(f'Q: {Q_n}')
                 i = t_1
                 t_1 = t_1 + self.last_li
                 n_1, u_1, Q_1, T_1 = self.init_IG(df, i, self.last_li)
                 Q_new.append(Q_1)
                 T_new.append(T_1)
-            if t_1 % 1000 == 0:
-                print(t_1)
             t_1 = t_1 + 1
         Q_n.append(N)
         return Q_n
