@@ -65,7 +65,7 @@ class EXP(nn.Module):
             valid_loss = self.vali(test_data, test_loader, criterion)
             print("Epoch: {0}, Steps: {1} | Train Loss: {2:.7f} Valid Loss: {3:.7f}".format(
                 epoch + 1, train_steps, train_loss, valid_loss))
-            # 决定是否需要保存模型
+            
             early_stopping(valid_loss, self.model, path)
 
             #adjust_learning_rate(model_optim, epoch + 1, self.args)
@@ -102,7 +102,7 @@ class EXP(nn.Module):
         if self.inverse:
             predictions = self.scaler.inverse_transform(preds.reshape(-1, 1))
             actual = self.scaler.inverse_transform(trues.reshape(-1, 1))
-            #转换形状
+           
             preds = predictions.reshape(-1, self.pred_len, 1)
             trues = actual.reshape(-1, self.pred_len, 1)
         # result save
