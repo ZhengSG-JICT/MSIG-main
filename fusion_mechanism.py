@@ -52,7 +52,7 @@ class Feature_capture(nn.Module):
         self.act = torch.nn.Tanh()
         self.drop = torch.nn.Dropout(0.05)
 
-    # 局部-全局模块体系结构
+    
     def local_padding_global(self, input, local_feature, padding, global_feature):
         batch, seq_len, channel = input.shape
         x = input.permute(0, 2, 1)
@@ -77,7 +77,7 @@ class Feature_capture(nn.Module):
             multi_global.append(src_global)
         return multi_local, multi_global
 
-#局部特征整合
+
 class decoder_cat(nn.Module):
     def __init__(self, hidden_size):
         super(decoder_cat, self).__init__()
